@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230701015020">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230703140848">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -450,13 +450,26 @@
 							<div class="form__main">
 								<form class="form__body">
 									<div class="form__fields">
-										<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="YOUR NAME">
-										<input class="form__input" data-error="Error text" data-validate data-required="email" type="text" placeholder="YOUR EMAIL">
-										<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="COMPANY NAME">
-										<input class="form__input" data-error="Error text" data-validate data-required type="number" placeholder="PHONE NUMBER">
+										<div class="validate-wrapper">
+											<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="YOUR NAME">
+										</div>
+
+										<div class="validate-wrapper">
+											<input class="form__input" data-error="Error text" data-validate data-required="email" type="text" placeholder="YOUR EMAIL">
+										</div>
+
+										<div class="validate-wrapper">
+											<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="COMPANY NAME">
+										</div>
+
+										<div class="validate-wrapper">
+											<input class="form__input" data-error="Error text" data-validate data-required type="number" placeholder="PHONE NUMBER">
+										</div>
 									</div>
 
-									<textarea data-autoheight data-autoheight-min="100" data-autoheight-max="300" class="form__textarea" name="textarea" id="popup-textarea" placeholder="YOUR MESSAGE"></textarea>
+									<div class="validate-wrapper">
+										<textarea data-autoheight data-autoheight-min="100" data-autoheight-max="300" class="form__textarea" name="textarea" id="popup-textarea" placeholder="YOUR MESSAGE"></textarea>
+									</div>
 
 									<div class="form__controls">
 										<button class="form__btn btn-transparent">
@@ -577,13 +590,26 @@
 
 					<form class="popup__form-body">
 						<div class="popup__form-fields">
-							<input class="popup__form-input" data-error="Error text" data-validate data-required type="text" placeholder="YOUR NAME">
-							<input class="popup__form-input" data-error="Error text" data-validate data-required="email" type="text" placeholder="YOUR EMAIL">
-							<input class="popup__form-input" data-error="Error text" data-validate data-required type="text" placeholder="COMPANY NAME">
-							<input class="popup__form-input" data-error="Error text" data-validate data-required type="number" placeholder="PHONE NUMBER">
+							<div class="validate-wrapper">
+								<input class="popup__form-input" data-error="Error text" data-validate data-required type="text" placeholder="YOUR NAME">
+							</div>
+
+							<div class="validate-wrapper">
+								<input class="popup__form-input" data-error="Error text" data-validate data-required="email" type="text" placeholder="YOUR EMAIL">
+							</div>
+
+							<div class="validate-wrapper">
+								<input class="popup__form-input" data-error="Error text" data-validate data-required type="text" placeholder="COMPANY NAME">
+							</div>
+
+							<div class="validate-wrapper">
+								<input class="popup__form-input" data-error="Error text" data-validate data-required type="number" placeholder="PHONE NUMBER">
+							</div>
 						</div>
 
-						<textarea data-autoheight data-autoheight-min="100" data-autoheight-max="300" class="popup__form-textarea" name="textarea" id="textarea" placeholder="YOUR MESSAGE"></textarea>
+						<div class="validate-wrapper">
+							<textarea data-autoheight data-autoheight-min="100" data-autoheight-max="300" class="popup__form-textarea" name="textarea" id="textarea" placeholder="YOUR MESSAGE"></textarea>
+						</div>
 
 						<div class="popup__form-bottom">
 							<p class="popup__bottom-text">By submitting an application, you agree to the processing of personal data</p>
@@ -595,7 +621,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20230701015020"></script>
+	<script src="js/app.min.js?_v=20230703140848"></script>
 </body>
 
 </html>

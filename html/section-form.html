@@ -14,13 +14,26 @@
 				<div class="form__main">
 					<form class="form__body">
 						<div class="form__fields">
-							<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="YOUR NAME">
-							<input class="form__input" data-error="Error text" data-validate data-required="email" type="text" placeholder="YOUR EMAIL">
-							<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="COMPANY NAME">
-							<input class="form__input" data-error="Error text" data-validate data-required type="number" placeholder="PHONE NUMBER">
+							<div class="validate-wrapper">
+								<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="YOUR NAME">
+							</div>
+
+							<div class="validate-wrapper">
+								<input class="form__input" data-error="Error text" data-validate data-required="email" type="text" placeholder="YOUR EMAIL">
+							</div>
+
+							<div class="validate-wrapper">
+								<input class="form__input" data-error="Error text" data-validate data-required type="text" placeholder="COMPANY NAME">
+							</div>
+
+							<div class="validate-wrapper">
+								<input class="form__input" data-error="Error text" data-validate data-required type="number" placeholder="PHONE NUMBER">
+							</div>
 						</div>
 
-						<textarea data-autoheight data-autoheight-min="100" data-autoheight-max="300" class="form__textarea" name="textarea" id="popup-textarea" placeholder="YOUR MESSAGE"></textarea>
+						<div class="validate-wrapper">
+							<textarea data-autoheight data-autoheight-min="100" data-autoheight-max="300" class="form__textarea" name="textarea" id="popup-textarea" placeholder="YOUR MESSAGE"></textarea>
+						</div>
 
 						<div class="form__controls">
 							<button class="form__btn btn-transparent">
